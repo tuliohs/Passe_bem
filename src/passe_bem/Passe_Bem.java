@@ -4,7 +4,7 @@ public class Passe_Bem {
 
     public static void main(String[] args) {
         
-        String init = "Hello, Word!";
+        String init = "PASSEBEM";
         System.out.println(init);      
     }    
 }
