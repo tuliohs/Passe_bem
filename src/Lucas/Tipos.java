@@ -4,9 +4,8 @@ package Lucas;
  *
  * @author Lucas
  */
-public class Tipos
-{  
-    public enum tipos
+ 
+    public enum Tipos
     { 
         CAMISA("Camisa"),
         CALCA("Calça"),
@@ -23,4 +22,4 @@ public class Tipos
         }
     }      
     
-}
+
