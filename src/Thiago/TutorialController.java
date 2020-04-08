@@ -3,15 +3,11 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
-
-
 /**
  *
  * @author Thiago
  */
 public class TutorialController {
-    
-    
     
     public void InsereComentario(TutorialModel model,UsuarioModel usuario) {
 Connection con = null;
