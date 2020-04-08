@@ -1,22 +1,31 @@
 package Thiago;
+import Tulio.UsuarioModel;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Thiago
  */
 public class TutorialController {
+
+    private String e;
     
-    public void InsereComentario(TutorialModel model,UsuarioModel usuario) {
+    public void InsereComentario(TutorialModel model,UsuarioModel usuario) throws SQLException {
 Connection con = null;
 String urlconexao = "jdbc:localhost";
 con = DriverManager.getConnection(urlconexao);
 con.open();
 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); 
 Date date = new Date(); 
-data_registro= dateFormat.format(date); 
+        String data_registro = dateFormat.format(date); 
 
   try {
       Statement st = null;
@@ -35,14 +44,14 @@ data_registro= dateFormat.format(date);
 con.close();
 }         
     
-public void InsereCurtida(TutorialModel model, UsuarioModel usuario) {
+public void InsereCurtida(TutorialModel model, UsuarioModel usuario) throws SQLException {
 Connection con = null;
 String urlconexao = "jdbc:localhost";
 con = DriverManager.getConnection(urlconexao);
 con.open();
 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); 
 Date date = new Date(); 
-data_registro= dateFormat.format(date); 
+        String data_registro = dateFormat.format(date); 
 
   try {
       Statement st = null;
