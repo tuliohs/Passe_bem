@@ -1,10 +1,4 @@
 package Thiago;
-
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import Tulio.UsuarioModel;
-import java.sql.Connection;
-import java.sql.ResultSet;
 /**
  *
  * @author Thiago
