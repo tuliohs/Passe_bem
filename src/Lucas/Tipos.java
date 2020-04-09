@@ -11,9 +11,9 @@ package Lucas;
         CALCA("Calça"),
         SOCIAIS("Sociais");
  
-        private String descricao;
+        private final String descricao;
 
-        tipos(String descricao) {
+        Tipos(String descricao) {
             this.descricao = descricao;
         }
 
