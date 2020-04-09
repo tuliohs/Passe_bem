@@ -1,12 +1,6 @@
-package Tipos;
+package Package_Tipos;
 
-/**
- *
- * @author Lucas
- */
- 
-    public enum Tipos
-    { 
+    public enum Tipos{ 
         CAMISA("Camisa Social"),
         TERNO("Camisa Social"),
         CALCA("Calça"),
