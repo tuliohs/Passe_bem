@@ -7,8 +7,9 @@ package Lucas;
  
     public enum Tipos
     { 
-        CAMISA("Camisa"),
-        CALCA("Calça"),
+        CAMISA("Camisa Social"),
+        TERNO("Blazer"),
+        CALCA("Calça jeans"),
         SOCIAIS("Sociais");
  
         private final String descricao;
