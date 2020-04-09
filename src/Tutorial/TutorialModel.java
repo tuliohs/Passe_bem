@@ -1,3 +1,58 @@
+package Tutorial;
+
+import Usuario.UsuarioModel;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Thiago
+ */
+public class TutorialModel {
+    	private int Id;
+	private String Descricao;
+	private String Video;
+	
+	public int getId() {
+	    return Id;
+	}
+	public void setId(int Id){
+	    this.Id = Id;
+	}
+	public String  getDescricaod() {
+	    return Descricao;
+	}
+	public void setDescricao(String Descricao){
+	    this.Descricao = Descricao;
+	}
+	
+	public String getVideo() {
+	    return Video;
+	}
+	public void setVideo(String Video){
+	    this.Video = Video;
+	}      
+        
+        
+   public void InsereComentario()  {
+
+   }
+   
+    public void InsereCurtida()  {
+
+   }
+        
+}
+
+
 package Thiago;
 import Tulio.UsuarioModel;
 import java.sql.DriverManager;
@@ -72,5 +127,6 @@ con.close();
     
     
 }
+
 
 

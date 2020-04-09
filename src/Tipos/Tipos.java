@@ -1,4 +1,4 @@
-package Lucas;
+package Tipos;
 
 /**
  *
@@ -8,9 +8,9 @@ package Lucas;
     public enum Tipos
     { 
         CAMISA("Camisa Social"),
-        TERNO("Blazer"),
-        CALCA("Calça jeans"),
-        SOCIAIS("Sociais");
+        TERNO("Camisa Social"),
+        CALCA("Calça"),
+        SOCIAIS("Calça jeans");
  
         private final String descricao;
 

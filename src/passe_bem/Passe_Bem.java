@@ -1,5 +1,5 @@
 package passe_bem;
-import Lucas.Tipos;
+import Tipos.Tipos;
 
 public class Passe_Bem {
 
