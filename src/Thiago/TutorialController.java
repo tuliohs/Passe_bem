@@ -22,9 +22,8 @@ public class TutorialController {
 Connection con = null;
 String urlconexao = "jdbc:localhost";
 con = DriverManager.getConnection(urlconexao);
-con.open();
 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); 
-Date date = new Date(); 
+Date data = new data(); 
         String data_registro = dateFormat.format(date); 
 
   try {
