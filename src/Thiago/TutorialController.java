@@ -23,8 +23,10 @@ Connection con = null;
 String urlconexao = "jdbc:localhost";
 con = DriverManager.getConnection(urlconexao);
 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); 
-Date data = new data(); 
-        String data_registro = dateFormat.format(date); 
+
+Date Data = null; 
+
+String data_registro = dateFormat.format(Data); 
 
   try {
       Statement st = null;
@@ -34,7 +36,7 @@ Date data = new data();
             .prepareStatement("insert into TutarialComentario" + "( id_tutorial,Id_usuario, data_regsitro)" +
             "values(?,?,?)");
         preparedStatement.setInt(1, model.getId());
-        preparedStatement.setString(2, usuario.getId());
+        preparedStatement.setInt(2, usuario.getId());
         preparedStatement.setString(3, data_registro);
         preparedStatement.execute();
   } catch (SQLException ex) {
@@ -47,10 +49,9 @@ public void InsereCurtida(TutorialModel model, UsuarioModel usuario) throws SQLE
 Connection con = null;
 String urlconexao = "jdbc:localhost";
 con = DriverManager.getConnection(urlconexao);
-con.open();
 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); 
-Date date = new Date(); 
-        String data_registro = dateFormat.format(date); 
+Date Data = null; 
+String data_registro = dateFormat.format(Data); 
 
   try {
       Statement st = null;
@@ -60,7 +61,7 @@ Date date = new Date();
             .prepareStatement("insert into TutarialCurtida" + "( id_tutorial,Id_usuario, data_regsitro)" +
             "values(?,?,?)");
         preparedStatement.setInt(1, model.getId());
-        preparedStatement.setString(2, usuario.getId());
+        preparedStatement.setInt(2, usuario.getId());
         preparedStatement.setString(3, data_registro);
         preparedStatement.execute();
   } catch (SQLException ex) {
