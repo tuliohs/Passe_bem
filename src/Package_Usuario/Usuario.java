@@ -44,15 +44,21 @@ public class Usuario {
         this.idade = idade;
     }
 
+    public Usuario(String login, String senha, String email, String genero, int idade) {
+        this.login = login;
+        this.senha = senha;
+        this.email = email;
+        this.genero = genero;
+        this.idade = idade;
+    }
+
   private String login;
   private String senha;
   private String email;
   private String genero;
   private int idade;
     
-public static void CadastrarUsuario(String login ,String  senha, String email,String  genero, int idade) {
 
-}
 
 private static boolean Login(String login ,String  senha)  {
     boolean result = false;
