@@ -71,13 +71,12 @@ private static boolean Login(String login ,String  senha)  {
 
     @Override
     public String toString() {
-        return "Usuario{" + "login=" + login + ", senha=" + senha + ", genero=" + genero + '}';
+        return "Usuario{" + "login=" + login + ", senha=" + senha + '}';
     }
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 67 * hash + Objects.hashCode(this.senha);
+        int hash = 7;
         return hash;
     }
 
@@ -93,8 +92,13 @@ private static boolean Login(String login ,String  senha)  {
             return false;
         }
         final Usuario other = (Usuario) obj;
+        if (!Objects.equals(this.login, other.login)) {
+            return false;
+        }
         return Objects.equals(this.senha, other.senha);
     }
+
+
 
 public static void EditarUsuario(String login ,String  senha, String email,String  genero, int idade) throws Exception {
 
