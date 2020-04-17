@@ -1,4 +1,4 @@
-package Package_Usuario;
+package Package.usuario;
 
 import java.util.Objects;
 
@@ -44,13 +44,14 @@ public class Usuario {
         this.idade = idade;
     }
 
-    public Usuario(String login, String senha, String email, String genero, int idade) {
+    public void CadastrarUsuario(String login, String senha, String email, String genero, int idade) {
         this.login = login;
         this.senha = senha;
         this.email = email;
         this.genero = genero;
         this.idade = idade;
     }
+
 
   private String login;
   private String senha;
@@ -69,8 +70,14 @@ private static boolean Login(String login ,String  senha)  {
 }
 
     @Override
+    public String toString() {
+        return "Usuario{" + "login=" + login + ", senha=" + senha + ", genero=" + genero + '}';
+    }
+
+    @Override
     public int hashCode() {
-        int hash = 7;
+        int hash = 5;
+        hash = 67 * hash + Objects.hashCode(this.senha);
         return hash;
     }
 
@@ -86,9 +93,6 @@ private static boolean Login(String login ,String  senha)  {
             return false;
         }
         final Usuario other = (Usuario) obj;
-        if (!Objects.equals(this.login, other.login)) {
-            return false;
-        }
         return Objects.equals(this.senha, other.senha);
     }
 

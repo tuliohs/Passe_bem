@@ -1,6 +1,6 @@
-package Tutorial;
+package Package.usuario;
 
-public class Tutorial {
+public class Tutorial extends Usuario {
 
     public int getId() {
         return id;
@@ -30,10 +30,8 @@ public class Tutorial {
 	private byte Video;        
         
    public static void InsereComentario(int id, String descricao, byte Video )  {
-
    }
    
     public static void InsereCurtida(int id)  {
-
    }
 }        

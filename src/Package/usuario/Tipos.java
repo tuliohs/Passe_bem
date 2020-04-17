@@ -1,4 +1,4 @@
-package Package_Tipos;
+package Package.usuario;
 
     public enum Tipos{ 
         CAMISA("Camisa Social"),
