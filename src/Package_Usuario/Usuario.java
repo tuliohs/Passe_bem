@@ -1,5 +1,7 @@
 package Package_Usuario;
 
+import java.util.Objects;
+
 public class Usuario {
     
     public String getLogin() {
@@ -57,8 +59,32 @@ private static boolean Login(String login ,String  senha)  {
     if (result) {
         return true;
     }   
-    return false;   
+    return result;   
 }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Usuario other = (Usuario) obj;
+        if (!Objects.equals(this.login, other.login)) {
+            return false;
+        }
+        return Objects.equals(this.senha, other.senha);
+    }
 
 public static void EditarUsuario(String login ,String  senha, String email,String  genero, int idade) throws Exception {
 
