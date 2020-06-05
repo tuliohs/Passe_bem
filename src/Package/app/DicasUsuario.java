@@ -1,24 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Package.app;
-
+/**Classe para objetos do tipo Funcionários, onde serão contidos, valores e 
+* métodos para o mesmo.
+* @author Thiago Soares, Tulio, Adair Lucas
+* @version 1.05
+*/
+ 
 import Package.Commons.Dicas;
 import java.util.Date;
 
-/**
- *
- * @author tulio
- */
 public class DicasUsuario extends Dicas {
-
     private int UsuarioId;
     private int DicaId;
     private Date DataPostagem;
     private Dicas Dica;
-
+ 
+ /** Método para herdar os métodos de Dicas
+ * @return String - Id do usuário, Id Dica, Data da Publicação
+ */
+    
     public int getUsuarioId() {
         return UsuarioId;
     }
@@ -43,7 +42,8 @@ public class DicasUsuario extends Dicas {
         this.DataPostagem = DataPostagem;
     }
 
-    public void EnviarDica(int UsuarioId, int DicaId, Date DataPostagem, String TextoDica) {
+    public void EnviarDica(int UsuarioId, int DicaId, Date DataPostagem, 
+        String TextoDica) {
         this.UsuarioId = UsuarioId;
         this.DicaId = Dica.getId();
         this.DataPostagem = DataPostagem;
@@ -53,7 +53,12 @@ public class DicasUsuario extends Dicas {
     public void ExcluirDica(int UsuarioId) {
         this.UsuarioId = UsuarioId;
     }
-
+ 
+ /** Método para retorno da matrícula do funcionário
+ * Compara TextoDica e DicasDescricao, se ok Dica recebe a Descricao
+ * @param TextoDica
+ */
+    
     public void EditarDica(String TextoDica) {
         if (!TextoDica.equals(Dica.getDicasDescricao())) {
             Dica.setDicasDescricao(TextoDica);

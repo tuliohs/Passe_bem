@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Package.Commons;
 
 /**
- *
- * @author tulio
- */
+* Classe Dicas, contrução dos métodos e retornos para Descricao, Id.
+* @author Thiago Soares, Tulio, Adair Lucas
+* @version 1.05
+*/
+
 public class Dicas {
 
     private int Id;

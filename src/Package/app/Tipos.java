@@ -1,5 +1,8 @@
 package Package.app;
-
+/**Enum para escolha dos tipos de camisa
+* @author Thiago Soares, Tulio, Adair Lucas
+* @version 1.05
+*/
     public enum Tipos{ 
         CAMISA("Camisa Social"),
         TERNO("Camisa Social"),

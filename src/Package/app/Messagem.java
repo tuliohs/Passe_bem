@@ -1,7 +1,14 @@
 package Package.app;
-
+/**
+* @author Thiago Soares, Tulio, Adair Lucas
+* @version 1.05
+*/
 public class Messagem extends Usuario {
-
+/**Método que Herda Usuário para envio de mensagens
+ * @return String - Descricao da Mensagem
+ * @return String - Codigo do Remetente
+ * @return String - Codigo do Destinatario
+ */
     
      	private int CodigoMensagem;
 	private String DescricaoMensagem; 
@@ -43,12 +50,12 @@ public class Messagem extends Usuario {
 
     
    public static void EnviarMensagem(int CodigoMensagem, String DescricaoMensagem, String CodigoRemetente, String CodigoDestinatario )  {
-        Usuario user = new Usuario();
+       Usuario user = new Usuario();
        CodigoRemetente =user.getLogin();
    }
    
    public static void ReceberMensagem(int CodigoMensagem, String DescricaoMensagem, String CodigoRemetente, String CodigoDestinatario )  {
-        Usuario user = new Usuario();
+       Usuario user = new Usuario();
        CodigoDestinatario =user.getLogin();
    }
    
