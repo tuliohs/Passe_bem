@@ -2,7 +2,7 @@ package Package.Commons;
 
 /**
 * Classe Dicas, contrução dos métodos e retornos para Descricao, Id.
-* @author Thiago Soares, Tulio, Adair Lucas
+* @author Thiago Soares, Tulio Henrique, Adair Lucas
 * @version 1.05
 */
 

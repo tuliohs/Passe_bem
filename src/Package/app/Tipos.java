@@ -1,6 +1,6 @@
 package Package.app;
 /**Enum para escolha dos tipos de camisa
-* @author Thiago Soares, Tulio, Adair Lucas
+* @author Thiago Soares, Tulio Henrique, Adair Lucas
 * @version 1.05
 */
     public enum Tipos{ 

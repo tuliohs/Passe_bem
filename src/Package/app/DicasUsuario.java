@@ -1,7 +1,7 @@
 package Package.app;
 /**Classe para objetos do tipo Funcionários, onde serão contidos, valores e 
 * métodos para o mesmo.
-* @author Thiago Soares, Tulio, Adair Lucas
+* @author Thiago Soares, Tulio Henrique, Adair Lucas
 * @version 1.05
 */
  

@@ -1,6 +1,6 @@
 package Package.app;
 /**
-* @author Thiago Soares, Tulio, Adair Lucas
+* @author Thiago Soares, Tulio Henrique, Adair Lucas
 * @version 1.05
 */
 public class Messagem extends Usuario {

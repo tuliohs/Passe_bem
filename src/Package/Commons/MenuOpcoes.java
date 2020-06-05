@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Package.Commons;
 
-/**
- *
- * @author tulio
- */
+/**Retorna a descricao do Menu, e recupera o Id da opção do Menu.
+* @author Thiago Soares, Tulio Henrique, Adair Lucas
+* @version 1.05
+* @Return String - Opcao Descricao
+* @Return String - Id do Menu 
+*/
 public class MenuOpcoes {
     
     private int Id;
@@ -33,7 +30,6 @@ public class MenuOpcoes {
        public void InserirOpcao(int Id, String OpcaoDescricao) {
         this.Id = Id;
         this.OpcaoDescricao = OpcaoDescricao;
-
     }
 
     public void ExcluirOpcao(int Id) {
@@ -45,5 +41,4 @@ public class MenuOpcoes {
             this.OpcaoDescricao = OpcaoDescricao;
         }
     }
-    
 }

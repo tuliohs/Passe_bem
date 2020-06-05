@@ -4,7 +4,7 @@ package Package.app;
 * Menu recebe os métodos herdado da classe OpçõesMenu e declara os métodos para
 * autorização de acordo com a Opção escolhida pelo usuário que está logado no
 * sistema.
-* @author Thiago Soares, Tulio, Adair Lucas
+* @author Thiago Soares, Tulio Henrique, Adair Lucas
 * @version 1.05
 */
 

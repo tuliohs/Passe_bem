@@ -1,7 +1,5 @@
 package passe_bem;
 
-import Package.Commons.Dicas;
-
 import Package.app.Usuario;
 
 public class PasseBem {
