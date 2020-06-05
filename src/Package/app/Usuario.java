@@ -50,6 +50,7 @@ public class Usuario {
         this.email = email;
         this.genero = genero;
         this.idade = idade;
+        System.out.println("Usuario cadastrado");
     }
 
     private String login;
@@ -58,8 +59,8 @@ public class Usuario {
     private String genero;
     private int idade;
 
-    private static boolean Login(String login, String senha) {
-        boolean result = false;
+    public static boolean Login(String login, String senha) {
+        boolean result = true;
         if (result) {
             return true;
         }
